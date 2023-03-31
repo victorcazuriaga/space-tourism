@@ -1,4 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+import {createGlobalStyle} from 'styled-components'
+export const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+    *{/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -46,3 +49,30 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+    }
+    
+    :root {
+
+        /* Colors */
+        
+        --primary-color:#0B0D17;
+        --secondary-color:#D0D6F9;
+        --white-color:#FFFFFF;
+
+        /* Tipography */
+
+        --heading-1: 'Bellefair', sans-serif, 150px;
+        --heading-2:'Bellefair', sans-serif, 100px;
+        --heading-3:'Bellefair', sans-serif, 56px;
+        --heading-4:'Bellefair', sans-serif, 32px;
+        --heading-5:'Barlow Condensed', sans-serif, 28px;
+        --subheading-1:'Bellefair', sans-serif, 28px;
+        --subheading-2:'Barlow Condensed', sans-serif, 14px;
+        --nav-text:'Barlow Condensed', sans-serif, 16px; 
+    }
+    body{
+        height:100vh;
+        width:100vw;
+    }
+`
